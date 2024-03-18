@@ -1,0 +1,383 @@
+@import url('../blocks/digits/digits.css');
+
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  position: relative;
+  overflow: hidden;
+  background-color: #f2f2ff;
+
+  /* выше установили ограничения для секции */
+}
+
+.header__title {
+  display: flex;
+  align-self: center;
+  width: 730px;
+  margin-left: 64px;
+  font-size: 102px;
+  font-weight: 600;
+  line-height: 96px;
+  z-index: 3;
+
+}
+
+.header__subtitle {
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  width: 388px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 400;
+  z-index: 3;
+}
+
+.header__main-illustration {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 765px;
+  height: 608px;
+  z-index: 2;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #2F80ED;
+  z-index: 3;
+}
+
+.header__link:hover {
+  opacity: 0.5;
+  transition-timing-function: linear;
+  transition-duration: .3s;
+}
+
+.header__square-pic {
+  position: absolute;
+  right: 0;
+  top: 64px;
+  width: 568px;
+  height: 568px;
+  background-color: #2F80ED;
+  transform: rotate(-15deg);
+  animation: rotate 20s infinite linear;
+  z-index: 1;
+}
+
+.header__logo {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  width: 183px;
+  height: 32px;
+  z-index: 1;
+}
+
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+}
+
+.description {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  min-width: 784px;
+  margin: 0 auto;
+}
+
+.two-columns__brief {
+  font-size: 18px;
+  line-height: 1.2;
+  width: 175px;
+  font-weight: 400;
+  color: #2F80ED;
+  margin-top: 2px;
+}
+
+.two-columns__main-text {
+  margin: auto;
+  width: 80%;
+  min-width: 784px;
+ 
+}
+
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.feinman {
+  background-color: #F2F2F2;
+	height: 790px;
+	position: relative;
+  background-image: url(../images/feinman.png);
+	/* background-image: url(../../images/feinman.png); */
+	background-size: 867px 637px;
+	background-repeat: no-repeat;
+	background-position: 0 100%;
+}
+
+.feinman__title {
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto 70px;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 67px;
+  /* margin-top: 100px;
+  margin-bottom: 70px; */
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+}
+
+.feinman__subtitle {
+  text-align: center;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+/* .feinman__img {
+  position: absolute;
+  width: 767px;
+  height: 537px;
+} */
+
+.feinman__link {
+  position: absolute;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 51px;
+  text-decoration: none;
+  color: black;
+  right: 48px;
+  top: 50%;
+}
+
+.feinman__link:hover {
+  opacity: 0.5;
+  transition-timing-function: linear;
+	transition-duration: .3s;
+  /* transition: 0.7s ease;  */
+}
+
+.kaufman {
+	overflow: hidden;
+	background-color: #1F1F1F;
+	position: relative;
+	z-index: 0;
+}
+
+.section-title.section-title_theme_dark {
+  align-items: center;
+  line-height: 69px;
+  font-size: 60px;
+  margin-left: 438px;
+}
+
+.section-subtitle.section-subtitle_theme_dark {
+  align-items: center;
+  line-height: 34px;
+  font-size: 24px;
+  margin-left: 600px;
+}
+
+
+.table_theme_dark {
+	margin-bottom: 90px;
+}
+
+.section-title_theme_dark {
+	margin-top: 90px;
+	color: white;
+}
+
+.section-subtitle_theme_dark {
+	padding-bottom: 0px;
+	margin: 0 auto;
+	color: white;
+}
+
+.table__heading_theme_dark {
+	line-height: 1.15;
+}
+
+.table__text_theme_dark {
+	font-size: 18px;
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  width: 200px;
+	padding-top: 80px;
+	margin: 0px;
+}
+
+.kaufman__triangle {
+  position: absolute;
+  right: -210px;
+  top: 0;
+  transform: rotate(-15deg);
+  animation: rotate 20s infinite linear;
+  z-index: -1;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-15deg);
+  }
+  to {
+    transform: rotate(345deg);
+  }
+}
+
+/* + */
+.footer {
+	background-color: #1F1F1F;
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.logo {
+  width: 183px;
+  height: 32px;
+  z-index: 1;
+}
+
+/* + */
+.footer__columns {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  color: white;
+	width: 90%;
+	margin: auto;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	min-height: 300px;
+}
+
+/* + */
+.footer__column {
+	margin: 0px;
+	padding-left: 0px;
+}
+
+/* + */
+.footer__column_content_copyright {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-between;
+	flex-basis: 711px;
+}
+
+/* + */
+.footer__author {
+	margin-top: 18px;
+	margin-bottom: 18px;
+	line-height: 25px;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+/* + */
+.footer__column_content_info {
+	display: flex;
+	flex-direction: column;
+}
+
+/* + */
+.footer__column_content_social {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.footer__list-item {
+	list-style: none;
+}
+
+.footer__column-heading {
+	line-height: 30px;
+	font-size: 18px;
+	font-weight: bold;
+	list-style: none;
+	margin-bottom: 20px;
+}
+
+/* + */
+.footer__column-link {
+	font-weight: normal;
+  line-height: 30px;
+	font-size: 18px;
+	text-decoration: none;
+	list-style: none;
+	color: white;
+}
+
+/* + */
+.footer__column-links {
+	padding: 0px;
+}
+
+.footer__list-item:hover {
+	opacity: 0.5;
+	transition-timing-function: linear;
+	transition-duration: .3s;
+}
+
+.footer__social-icon {
+	vertical-align: middle;
+	text-decoration: none;
+  width: 18px;
+	height: 18px;
+
+  padding-right: 5px;
+
+}
+
